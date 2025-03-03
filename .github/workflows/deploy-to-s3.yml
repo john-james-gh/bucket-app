@@ -42,4 +42,4 @@ jobs:
       # 6. Deploy to S3 using the AWS CLI
       - name: Deploy to S3
         run: |
-          aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read --delete
+          aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET }} --delete
